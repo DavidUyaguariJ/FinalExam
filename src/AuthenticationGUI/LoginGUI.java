@@ -1,9 +1,10 @@
+package ProyectGUI.AuthenticationGUI;
+
 import javax.swing.*;
 import java.awt.*;
 
 public class LoginGUI {
     private JTextField txtCorreoTlf;
-    private JPasswordField txtContraseña;
     private JButton ingresarButton;
     private JButton crearCuentaButton;
     private JPanel pLogin; // Este es el contenido del formulario
@@ -12,7 +13,7 @@ public class LoginGUI {
 
     public LoginGUI() {
         // Cargar y redimensionar la imagen del JLabel
-        ImageIcon icon = new ImageIcon("src/logou-removebg-preview.png");
+        ImageIcon icon = new ImageIcon("src/Images/logou-removebg-preview.png");
         Image img = icon.getImage();
         Image imgRedimensionada = img.getScaledInstance(190, 150, Image.SCALE_SMOOTH);
         imaU2.setIcon(new ImageIcon(imgRedimensionada));
@@ -25,7 +26,7 @@ public class LoginGUI {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Login");
 
-        PanelConFondo panelConFondo = new PanelConFondo("src/fondo u.jpg");
+        PanelConFondo panelConFondo = new PanelConFondo("src/Images/fondo u.jpg");
         panelConFondo.setLayout(new BorderLayout());
 
         LoginGUI loginGUI = new LoginGUI();

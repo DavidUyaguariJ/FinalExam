@@ -1,3 +1,5 @@
+package ProyectGUI.AuthenticationGUI;
+
 import javax.swing.*;
 import java.awt.*;
 
